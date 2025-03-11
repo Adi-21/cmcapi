@@ -396,7 +396,7 @@ async function testAPI() {
         console.log('Bitcoin Info:', {
             name: infoResult.data.data.BTC.name,
             category: infoResult.data.data.BTC.category,
-            description: infoResult.data.data.BTC.description?.slice(0, 100) + '...'
+            description: `${infoResult.data.data.BTC.description?.slice(0, 100)}...`
         });
     } else {
         console.log('Error:', infoResult.error?.message);
